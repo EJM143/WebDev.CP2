@@ -1,0 +1,41 @@
+<!-- 
+    Name: Edale Miguel
+    Date: October 27, 2024
+
+    This HTML file provides the structure for the Meme Generator application. 
+    It includes sections for displaying a meme image, a button to fetch a new meme 
+    for a clean and organized layout. It is structured to support 
+    responsive design and accessibility.
+-->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Memes</title>
+    <link rel="stylesheet" href="meme.css">
+</head>
+<body>
+    <section class="meme">
+        <h1>Random Memes</h1>
+        <div>
+            <!-- Meme Image-->
+            <img id="memeImage" class="memeImage" alt="Random meme">
+            <p id="memeText"></p>
+        </div>
+        <!-- Meme Button-->
+        <button id="memeButton">More Meme Magic</button>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="error"></div>
+
+        <div class="api-credit">
+            <p>Memes provided by <a href="https://imgflip.com/api" target="_blank">Imgflip API</a>.</p>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
+

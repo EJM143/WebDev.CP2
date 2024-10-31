@@ -1,0 +1,174 @@
+<!--
+  Name: Edale Miguel
+  Date: October 4, 2024
+  
+  This is the aboutme.html page for my personal portfolio.
+  It provides an introduction about me, including my projects, resume, interest,
+  and a link to the website I created.
+-->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>CreativeProject1</title>
+</head>
+<body>
+    <section>
+        <h1 class="title">Welcome To My Personal Portfolio</h1>
+        <div class="nameProfile">
+            <img src="images/me.jpg" alt="A photo of me" class="profileImage">
+            <div>
+                <h1 class="name">Edale Miguel</h1>
+                <p class="description">
+                    I am a dedicated and enthusiastic senior student pursuing a degree in Computer Science. 
+                    With a strong interest in web development, I am currently exploring new technologies to 
+                    enhance my programming skills. I bring a wealth of experience from my current role as a 
+                    customer service representative, where I developed excellent communication and teamwork skills.
+                </p>
+            </div>
+        </div>
+        
+        <div>
+        <p>You can view my resume <a href="images/EdaleMiguelResume.pdf" target="_blank">here</a>.</p>
+        </div>
+
+        <div class="myWebsite">
+            <p>Explore My Website! <a href="myWebsite.html">Visit Now</a>.</p>
+        </div>  
+
+         <!-- Link to Meme -->
+        <div>
+            <p> Random Meme's! <a href="meme.html" id="memeLink">Click here.</a></p>
+        </div>
+    </section>
+
+             <!-- Navigation Bar -->
+     <nav class="navbar">
+        <ul class="navLinks">
+            <li><a href="#projects">About Me</a></li>
+        </ul>
+    </nav>    
+
+    <section>
+        <!-- Projects -->
+        <div id="projects" class="projectStyle hidden">
+            <details class="projectsTab">
+                <summary>Projects</summary>
+                <ul>
+                    <li><strong>Project 1:</strong> Appwrite Project
+                        <p>Description: Worked on the open-source Appwrite project by enhancing session management functionality.</p>
+                        <p><a href="https://github.com/EJM143/SummerProject1_Appwrite/pull/3/files" target="_blank">View Pull Request</a></p>
+                    </li>
+                    <li><strong>Project 2:</strong> Selene Contribution
+                        <p>Description: Contributed on a Selene project by improving logging sessions by converting local 
+                        file paths to clickable URIs for better accessibility across all operating systems.</p>
+                        <p><a href="https://github.com/cshimm/selene/commit/7373d9bbbc331ac8b927b11a595b2f1fde3e7a25" 
+                            target="_blank">View Pull Request</a></p>
+                    </li>
+
+                    <li><strong>Project 3:</strong> Job Evaluation Tool
+                        <p>Description: Created a website for a Job Evaluation Tool.</p>
+                        <p><a href="jobevaltool.html">Check It Out!</a></p>
+                    </li>
+                </ul>
+            </details>
+        </div>
+
+              <!-- Classes I'm currently taking -->
+        <div id="classes" class="projectStyle1">
+            <details class="classesTab">
+                <summary>Classes I'm currently taking</summary>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Project Management</li>
+                </ul>
+            </details>
+        </div>
+
+            <!-- Five of My Favorite Things -->
+        <div id="favorites">
+            <details class="favoritesTab">
+                <summary>Five of My Favorite Things</summary>
+                <ol>
+                    <li><strong>Favorite animal:</strong> Dog</li>
+                    <img src="images/myBaby.jpg" alt="A picture of my dog" class="images">
+                    <li><strong>Favorite food:</strong> Cakes</li>
+                    <br>
+                    <img src="images/cake.jpg" alt="An image of a cake" class="images">
+                    <p>
+                        Image Source: 
+                        <a href="https://sdnews.com/international-85c-bakery-cafe-opens-in-loma-square/" target="_blank">
+                        San Diego News. "International 85C Bakery Cafe Opens in Loma Square." San Diego News, October 4, 2024.
+                        </a>
+                    </p>
+                    <li><strong>Favorite drink:</strong> Coffee</li>
+                    <br>
+                    <img src="images/Coffee.jpg" alt="An image of a cup of coffee" class="images">
+                    <p>
+                        Image Source: 
+                        <a href="https://www.cnn.com/2020/10/01/health/coffee-first-thing-in-the-morning-wellness/index.html" target="_blank">
+                        CNN. "Coffee First Thing in the Morning." CNN, October 1, 2020.
+                        </a>
+                    </p>
+                    <li><strong>Favorite TV show:</strong> Crime Show</li>
+                    <br>
+                    <img src="images/Criminal-Minds.jpg" alt="An image of Criminal Minds Show" class="images">
+                    <p>
+                        By Transferred by <a href="//commons.wikimedia.org/wiki/User:Bloody-libu">Bloody-libu</a>; originally uploaded by 
+                        <a href="https://de.wikipedia.org/wiki/Xavax">Xavax</a> - Originally uploaded on 
+                        <a href="https://commons.wikimedia.org/w/index.php?curid=16865216">Wikimedia Commons</a>, Public Domain.
+                    </p>
+
+                    <li><strong>Favorite hobby:</strong> Hiking</li>
+                    <img src="images/PooPooPointHike.jpg" alt="A picture of me reaching the top of the Poo Poo Point Trail." class="images">
+                    <img src="images/mtRainierHike.jpg" alt="A picture of me hiking at Mt. Rainier" class="images">
+                </ol>
+            </details>
+        </div>
+
+            <!-- A picture that represents when I'm happy -->
+        <div id="happy">
+            <details class="happyTab">
+                <summary>A picture that represents when I'm happy</summary>
+                <h3>Feeling Alive!</h3>
+                <img src="images/happy.jpg" alt="A beautiful sunset" class="image1">
+                <div class="photoLabel">
+                    <p>Photo taken by me.</p>
+                </div>
+            </details>
+        </div>
+
+            <!-- A picture that represents when I'm sad -->
+        <div id="sad">
+            <details class="sadTab">
+                <summary>A picture that represents when I'm sad</summary>
+                <h3>Feeling Blue!</h3>
+                <img src="images/sad1.jpg" alt="A gloomy weather" class="image1">
+                <div class="photoLabel">
+                    <p>Photo taken by me.</p>
+            </details>
+        </div>
+
+            <!-- One of my favorite quotes -->
+        <div id="quote">
+            <details class="quoteTab">
+                <summary>One of my favorite quotes</summary>
+                <h3>One of my favorite quotes</h3>
+                <article>
+                    <blockquote>
+                        <p>
+                            "The journey of a thousand miles begins with one step"
+                        </p>
+                        <footer>by Lao Tzu</footer>
+                    </blockquote>
+                </article>
+           </details>
+        </div>
+
+    </section>
+    
+</body>
+</html>

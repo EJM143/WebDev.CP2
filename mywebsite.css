@@ -1,0 +1,230 @@
+/*
+  Name: Edale Miguel
+  Date: October 6, 2024
+  
+  This CSS file styles the myWebsite.html, creating a cohesive design 
+  and improving the user experience.
+*/
+
+
+/* Washingtonwanders Title */
+header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+  }
+  
+  #title h1 {
+    text-align: center; /* Center the heading */
+    margin: 50px 0; /* Add some margin for spacing */
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex; 
+    justify-content: center; 
+    margin: 10px 0;
+    width: 100%; 
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline; 
+  }
+  
+  .home {
+    display: flex;
+    background-color: white; 
+    color: black; 
+    padding: 30px 20px; 
+    text-align: center; 
+  }
+  
+  .home h2 {
+    margin-top: 0; 
+    margin-bottom: 0px; 
+  }
+  
+  .home p {
+    margin-top: 0; 
+    margin-bottom: 0; 
+  }
+  
+  .logo {
+    max-width: 600px; 
+    height: auto;
+    margin: 10px auto; 
+    display: block; 
+  }
+  
+  head {
+    scroll-behavior: smooth; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    margin: 20px 0;
+    background-color: #f9f9f9;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  
+  }
+  
+  /* Will make the full view of the page */
+  .section {
+    display: none;  /* Hide all sections */
+    height: 100vh; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+  }
+  
+  /* Display only the #title and #home */
+  #title, #home {
+    display: block; 
+  }
+  
+  /* Shows the page when you click the navigation link */
+  .section:target {
+    display: block;
+  }
+  
+  .section div {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .section h2 {
+    margin-bottom: 5px;
+  }
+  
+  .events {
+    font-size: 24px; 
+    font-family: 'Lucida Sans Unicode'; 
+    color: green; 
+    margin-bottom: 30px; 
+    margin-top: 50px;
+  }
+  
+  
+  .annualEvents {
+    font-size: 24px; 
+    font-family: 'Lucida Sans Unicode'; 
+    color: green; 
+    margin-top: 50px; 
+    margin-bottom: 30px; 
+  }
+  
+  .section p {
+    margin-top: 5px;
+  }
+  
+  .image {
+    max-width: 500px;
+    height: auto;
+  }
+  
+  #home, #attractions, #thingsToDo, #photos, #travel {
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  #thingsToDo p {
+    margin-bottom: 50px;
+  }
+  
+  /* Travel Page layout */
+  #attractions, #thingsToDo, #photos, #travel {
+    text-align: left; /* Align text to the left */
+  }
+  
+  #travel h2 {
+    margin: 50px 0; 
+  }
+  
+  
+  /* Home Link */
+  .homeLinkTop button {
+    color: green; 
+    text-decoration: none; 
+    font-size: 12pt;
+    margin-bottom: 10px;
+  }
+  
+
+/* ZIP Code Lookup Section */
+.zipsection {
+  background-color: #B1D8B7;  
+  border: 1px solid #ddd;     
+  border-radius: 4px;         
+  padding: 20px;              
+  width: 300px;               
+  margin-top: 20px;           
+}
+
+/* Title Style */
+.zipsection h2 {
+  margin-bottom: 10px;        
+  font-size: 1.5em;           
+  font-family: Lucida Sans;
+}
+
+ 
+.zipsection label {
+  font-weight: bold;          
+}
+
+.zipsection input[type="text"] {
+  width: 100%;                
+  padding: 8px;               
+  margin-bottom: 10px;        
+  border: 1px solid #ccc;     
+  border-radius: 4px;         
+}
+
+/* Button Style */
+.zipsection button {
+  padding: 8px 12px;          
+  background-color: #4CAF50;  
+  color: white;               
+  border: none;               
+  cursor: pointer;            
+}
+
+/* Text style */
+#locationInfo {
+  margin-top: 10px;           
+  font-size: 0.9em;           
+  color: #555;                
+}
+
+/* API Citations Section */
+.api-citations {
+  margin-top: 20px;           
+  font-size: 0.9em;           
+  color: #555;                
+}
+
+.api-citations a {
+  color: #4CAF50;             
+  text-decoration: none;      
+}
+
+.api-citations a:hover {
+  text-decoration: underline;  
+}

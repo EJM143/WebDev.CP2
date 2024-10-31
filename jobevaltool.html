@@ -1,0 +1,274 @@
+<!--
+    Name: Edale Miguel
+    Date: October 6, 2024
+    
+This HTML file serves as the main structure for the Job Evaluation Tool.  The layout 
+is designed to be user-friendly, allowing job seekers to easily assess and compare 
+job offers while enhancing their decision-making process.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jobevaluationtool</title>
+    <link rel="stylesheet" href="jobevaltool.css">
+</head>
+<body>
+
+    <header id="home">
+        <h1>Job Offer Evaluation Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="#signIn">Sign In</a></li>
+                <li><a href="#createAnAccount">Create An Account</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Job Tool Heading Section -->
+    <section id="jobToolHeading">
+        <h2>Make Informed Career Decisions</h2>
+        <p>Evaluate and compare your job offers to find the best fit for you.</p>
+        <a href="#addJobOffer" class="GSbutton">Get Started</a>
+    </section>
+
+    <!-- Sign In Section (under Job Tool Heading) -->
+    <section id="signIn">
+        <h2>Sign In</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+
+    <!-- Create An Account Section (under Job Tool Heading) -->
+    <section id="createAnAccount">
+        <h2>Create An Account</h2>
+        <form>
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            <button type="submit">Create Account</button>
+        </form>
+    </section>
+    
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#jobSummary">Job Summary</a></li>
+                <li><a href="#comparisonMetrics">Metrics</a></li>
+                <li><a href="#tipsResources">Tips & Resources</a></li>
+                <li><a href="#feedback">Add a Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Job Offer 1 Section -->
+    <section id="addJobOffer">
+        <h2>Add a Job Offer 1</h2>
+        </div>
+
+        <div>
+            <label for="offerPDF">Upload Offer PDF:</label>
+            <input type="file" id="offerPDF" name="offerPDF" accept="application/pdf">
+        </div>
+
+        <form action="#jobSummary" method="GET">
+            <label form="jobTitle">Job Title:</label>
+            <select>
+                <option value="blank"></option>
+                <option value="dataAnalyst">Data Analyst</option>
+                <option value="dataEngineer">Data Engineer</option>
+                <option value="dataScientiest">Data Scientist</option>
+                <option value="sEngineer">Software Engineer</option>
+                <option value="webDeveloper">Web Developer</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="company">Company:</label>
+            <select>
+                <option value="blank"></option>
+                <option value="amazon">Amazon</option>
+                <option value="expedia">Expedia</option>
+                <option value="facebook">Facebook</option>
+                <option value="google">Google</option>
+                <option value="microsoft">Microsoft</option>
+                <option value="netflix">Netflix</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="benefit">Choose a benefit:</label>
+            <select>
+                <option value="blank"></option>
+                <option value="401K">401K</option>
+                <option value="medical">Medical</option>
+                <option value="paidVacation">Paid Vacation</option>
+                <option value="sickLeave">Sick Leave</option>
+                <option value="workHours">Work Hours</option>
+                <option value="other">Other</option>
+            </select>
+        
+        </form>
+ 
+        <div>
+            <label for="baseSalary">Base Salary:</label>
+            <input type="number" id="baseSalary" name="baseSalary" required>
+
+            <label for="bonus">Bonus:</label>
+            <input type="number" id="bonus" name="bonus" required>
+
+            <label for="stockComp">Stock Compensation:</label>
+            <input type="number" id="stockComp" name="stockComp" required>
+        </div>
+
+        <div>
+            <!-- Buttons for Job Offers -->
+            <a href="#addJobOffer2" class="offerButton">Add Job Offer 2</a>
+        </div>
+
+        <div class="homeLinkTop">
+            <a href="#home">Home</a>
+        </div>
+
+        <div>
+            <a href="#jobSummary">Submit</a>
+        </div>
+        
+    </section>
+
+
+        <!-- Job Offer 2 Section -->
+        <section id="addJobOffer2">
+            <h2>Add a Job Offer 2</h2>
+            </div>
+    
+            <div>
+                <label for="offerPDF">Upload Offer PDF:</label>
+                <input type="file" id="offerPDF" name="offerPDF" accept="application/pdf">
+            </div>
+    
+            <form action="#jobSummary" method="GET">
+                <label form="jobTitle">Job Title:</label>
+                <select>
+                    <option value="blank"></option>
+                    <option value="dataAnalyst">Data Analyst</option>
+                    <option value="dataEngineer">Data Engineer</option>
+                    <option value="dataScientiest">Data Scientist</option>
+                    <option value="sEngineer">Software Engineer</option>
+                    <option value="webDeveloper">Web Developer</option>
+                    <option value="other">Other</option>
+                </select>
+        
+                <label for="company">Company:</label>
+                <select>
+                    <option value="blank"></option>
+                    <option value="amazon">Amazon</option>
+                    <option value="expedia">Expedia</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="google">Google</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="netflix">Netflix</option>
+                    <option value="other">Other</option>
+                </select>
+    
+                <label for="benefit">Choose a benefit:</label>
+                <select>
+                    <option value="blank"></option>
+                    <option value="401K">401K</option>
+                    <option value="medical">Medical</option>
+                    <option value="paidVacation">Paid Vacation</option>
+                    <option value="sickLeave">Sick Leave</option>
+                    <option value="workHours">Work Hours</option>
+                    <option value="other">Other</option>
+                </select>
+            
+            </form>
+     
+            <div>
+                <label for="baseSalary">Base Salary:</label>
+                <input type="number" id="baseSalary" name="baseSalary" required>
+    
+                <label for="bonus">Bonus:</label>
+                <input type="number" id="bonus" name="bonus" required>
+    
+                <label for="stockComp">Stock Compensation:</label>
+                <input type="number" id="stockComp" name="stockComp" required>
+            </div>
+    
+            <div class="homeLinkTop">
+                <a href="#home">Home</a>
+            </div>
+    
+            <div>
+                <a href="#jobSummary">Submit</a>
+            </div>
+            
+        </section>
+
+    <!-- Job Summary Section -->
+    <section id="jobSummary">
+        <h2>Job Offer Summary</h2>
+        <div id="summaryContent">
+            <p>Result summary will be display here.</p>
+        </div>
+        <div class="homeLinkTop">
+            <a href="#home">Home</a>
+        </div>
+
+    </section>
+
+    <!-- Metrics Section -->
+    <section id="comparisonMetrics">
+        <h2>Comparison Metrics</h2>
+        <p>Visualize your offers:</p>
+        <div id="chartContent">
+            <p>Charts will be displayed here.</p>
+        </div>
+        <div class="homeLinkTop">
+            <a href="#home">Home</a>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h2>User Feedback</h2>
+        <form>
+            <label for="userFeedback">Leave your feedback:</label>
+            <textarea id="userFeedback" name="userFeedback" placeholder="Your feedback..."></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <div class="homeLinkTop">
+            <a href="#home">Home</a>
+        </div>
+    </section>
+
+    <!-- Tips & Resources Section -->
+    <section id="tipsResources">
+        <h2>Tips & Resources</h2>
+        <p>Check out our articles for tips on job offers and negotiations.</p>
+        <ul>
+            <li><a href="#">How to Negotiate Your Job Offer</a></li>
+            <li><a href="#">Understanding Stock Options vs. RSUs</a></li>
+            <li><a href="#">Work-Life Balance: What to Look For</a></li>
+        </ul>
+
+        <div class="homeLinkTop">
+            <a href="#home">Home</a>
+        </div>
+    </section>
+
+</body>
+<footer>
+    <p>&copy; 2024 Edale Miguel. All rights reserved.</p>
+    <p>Created by Edale Miguel</p>
+</footer>
+</html>

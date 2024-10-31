@@ -1,0 +1,65 @@
+/* 
+ * Name: Edale Miguel
+ * Date: October 27, 2024
+ *
+ * This CSS file handles the layout and styling of the Meme Generator, 
+ * creating a responsive design for a user-friendly experience that enhances 
+ * both usability and accessibility.
+ */
+
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: #EDEDED; 
+}
+
+/* Meme Section Styles */
+.meme {
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0; 
+
+}
+
+/* Meme Image Styles */
+.memeImage {
+    width: 650px; 
+    height: 650px; 
+    object-fit: cover; /* Ensure images will fit in the box */
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Meme Button Styles */
+#memeButton {
+    margin: 5px auto; 
+    padding: 5px 5px;
+    font-size: 16px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 5px; 
+    background-color:  #7CC6C7; 
+    color: white; 
+    transition: background-color 0.3s; 
+}
+
+/* Change button color on hover */
+#memeButton:hover {
+    background-color: #9BB19B; 
+}
+
+
+/* Error Message Styles */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+

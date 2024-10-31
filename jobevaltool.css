@@ -1,0 +1,248 @@
+/*<!--
+  Name: Edale Miguel
+  Date: October 6, 2024
+  
+  This CSS file styles the Job Evaluation Tool, providing a responsive layout and visually 
+  appealing design for a better user experience. It includes styles to enhance usability 
+  and accessibility throughout the application.
+*/
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;     
+    align-items: center;    
+    background-color: #6a5acd; 
+    color: white;
+    font-size: 25px;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/*Job Offer Evaluation Tool Heading */
+h1 {
+    margin: 20;
+}
+
+/* Navigation Center */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Navigation Center for div*/
+div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+div nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+div nav ul li a {
+    display: inline-block;           
+    padding: 10px 20px;              
+    background-color: rgb(152, 151, 151);
+    color: white;                   
+    text-decoration: none;          
+    border-radius: 5px;             
+    border: none;                    
+    font-size: 16px;              
+    transition: background-color 0.3s ease; 
+}
+
+div nav ul li a:hover {
+    background-color: gray;       
+}
+
+/* Job Tool Heading*/
+#jobToolHeading {
+    background-color: #7b68ee; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 320px;
+}
+
+#jobToolHeading {
+    display: block;
+}
+
+#addJobOffer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 100vh; 
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+#addJobOffer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 100vh; 
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+/* Home Link */
+.homeLinkTop {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 100;
+    margin: 20px 0; 
+    text-align: center; 
+}
+
+.homeLinkTop a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #4b37cb;
+}
+
+
+/* Getting Started Button */
+.GSbutton {
+    background-color: #483d8b; 
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(124, 67, 124); 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; 
+}
+
+button:hover {
+    background-color: gray; 
+}
+
+/* Displays the section on homepage only*/
+#home, #jobToolHeading {
+    display: block; 
+}
+
+/* Section Styles */
+section {
+    position: relative; /* This ensures that the home botton will appear on each pages since display is set to none */
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+section:target {
+    display: block;
+    height: 100vh;
+    margin: 0; 
+    padding: 20px;
+}
+
+section div {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #4a4e3d; 
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Changes the width of the window */
+#jobSummary, #comparisonMetrics, #feedback, #tipsResources {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Changes the shadow box for the Job Summary and Metrics */
+#chartContent, #summaryContent {
+    min-height: 600px;
+    background: #e6e6e6; 
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Feedback text row distance from the section header */
+#feedback h2 {
+    margin-bottom: 300px; 
+}
+
+form textarea {
+    resize: vertical; 
+    height: 100px; 
+}
+
+#feedback textarea {
+    width: 100%;             
+    height: 150px;           
+    font-size: 12px;        
+
+}
+
+/* Feedback submit button style*/
+#feedback button {
+    margin-top: 10px;       
+    padding: 10px 15px;     
+    background-color: #800080; 
+    color: white;          
+    border: none;          
+    cursor: pointer;        
+    border-radius: 4px;    
+}
+
+footer {
+    background-color: #6a5acd; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
